@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'qbx_weed'
 repository 'https://github.com/Qbox-project/qbx_weed'
-version '1.0.0'
+version '1.0.1'
 
 ox_lib 'locale'
 
@@ -15,6 +15,7 @@ shared_scripts {
 client_script 'client/main.lua'
 
 server_scripts {
+	'server/pn-lib-config.lua',
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua'
 }
